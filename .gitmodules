@@ -1,9 +1,10 @@
-[submodule "submodules/fileOperator"]
-	path = submodules/fileOperator
-	url = https://github.com/rentasad/rentasad.library.basicTools.fileOperator
 [submodule "submodules/commandExecutionTool"]
 	path = submodules/commandExecutionTool
 	url = https://github.com/rentasad/rentasad.library.basicTools.commandExecutionTool
+
 [submodule "submodules/stringTools"]
 	path = submodules/stringTools
 	url = https://github.com/rentasad/rentasad.library.basicTools.stringTools
+[submodule "submodules/fileOperator"]
+	path = submodules/fileOperator
+	url = https://github.com/rentasad/rentasad.library.basicTools.fileOperator
