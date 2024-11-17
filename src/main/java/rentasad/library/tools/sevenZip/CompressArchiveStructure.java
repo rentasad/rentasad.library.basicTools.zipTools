@@ -42,8 +42,8 @@ public class CompressArchiveStructure
     }
 
     static class Item {
-        private String path;
-        private byte[] content;
+        private final String path;
+        private final byte[] content;
 
         Item(String path, String content) {
             this(path, content.getBytes());

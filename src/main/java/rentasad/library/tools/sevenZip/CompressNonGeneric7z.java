@@ -25,18 +25,27 @@ public class CompressNonGeneric7z {
             implements IOutCreateCallback<IOutItem7z> {
 
         public void setOperationResult(boolean operationResultOk)
-                throws SevenZipException {
+                 {
             // Track each operation result here
         }
 
-        public void setTotal(long total) throws SevenZipException {
+        public void setTotal(long total)
+		{
             // Track operation progress here
         }
 
-        public void setCompleted(long complete) throws SevenZipException {
+        public void setCompleted(long complete)
+		{
             // Track operation progress here
         }
 
+        /**
+         * Retrieves information about an item at the specified index.
+         *
+         * @param index the index of the item.
+         * @param outItemFactory the factory used to create the output item.
+         * @return the output item containing either directory or file information based on the content.
+         */
         public IOutItem7z getItemInformation(int index,
                 OutItemFactory<IOutItem7z> outItemFactory) {
             IOutItem7z item = outItemFactory.createOutItem();
@@ -54,7 +63,14 @@ public class CompressNonGeneric7z {
             return item;
         }
 
-        public ISequentialInStream getStream(int i) throws SevenZipException {
+        /**
+         * Retrieves a sequential input stream for the specified item index.
+         *
+         * @param i the index of the item to retrieve the stream from.
+         * @return the input stream containing the item's content, or null if the content is null.
+         */
+        public ISequentialInStream getStream(int i)
+		{
             if (items[i].getContent() == null) {
                 return null;
             }
@@ -64,7 +80,12 @@ public class CompressNonGeneric7z {
 
     private Item[] items;
 
-
+    /**
+     * Compresses an array of items into a 7z archive file.
+     *
+     * @param itemsArgument An array of items to be compressed, where each item contains a path and content.
+     * @param filename The name of the output file where the compressed archive will be written.
+     */
     public void compress(Item[] itemsArgument, String filename) {
         items = itemsArgument;
 
