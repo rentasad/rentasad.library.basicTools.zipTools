@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>rentasad.library.basicTools.zipTools</artifactId>
 	<groupId>rentasad.library</groupId>
-	<version>3.0.0</version>
+	<version>3.0.1</version>
 
 	<name>rentasad.library.basicTools.zipTools</name>
 	<url>https://github.com/rentasad/rentasad.library.basicTools.zipTools</url>
@@ -41,9 +41,9 @@
 			<version>3.0.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.directory.studio</groupId>
-			<artifactId>org.apache.commons.io</artifactId>
-			<version>2.4</version>
+			<groupId>rentasad.library</groupId>
+			<artifactId>rentasad.library.basicTools.commandExecutionTool</artifactId>
+			<version>3.0.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/net.lingala.zip4j/zip4j -->
 		<dependency>
