@@ -4,6 +4,7 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/submodules/commandExecutionTool" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/submodules/fileOperator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/submodules/fileOperator/submodules/rentasad.library.basicTools.dateTools" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/submodules/stringTools" vcs="Git" />
   </component>
 </project>
